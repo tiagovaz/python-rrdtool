@@ -1,0 +1,10 @@
+import rrdtool
+
+ret = rrdtool.graph( "lol.png", "--start", "-1%s" %(period), "--vertical-label=Num",
+         '--watermark=playground.in.supportex.net',
+         "-w 800",
+         "DEF:metric1=example.rrd:metric1:AVERAGE",
+         "LINE1:metric1#0000FF:metric1\r",
+)
+
+
