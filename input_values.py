@@ -29,7 +29,7 @@ for i in range(1,1000):
 
 #For information of last update
 info = rrdtool.info('example.rrd')
-print info['last_update']
+print(info['last_update'])
 
 
 
